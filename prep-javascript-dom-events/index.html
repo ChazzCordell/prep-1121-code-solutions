@@ -9,14 +9,16 @@
   <body>
     <button class="hello-world-btn">Hello World!</button>
     <script>
-          document.addEventListener('DOMContentLoaded', eventfunction());
-
-          eventfunction() {
-          text('content loaded!');
-      }
-      console.log('content loaded!')
-
-          }
+      document.addEventListener('DOMContentLoaded', function () {
+        console.log('content loaded!');
+      });
+      window.addEventListener('mousemove', function () {
+        console.log('mouse is moving!');
+      });
+      var $helloWorld = document.querySelector('p.hello-world-btn');
+      document.addEventListener('click', function () {
+        console.log('hello world');
+      });
     </script>
   </body>
 </html>
